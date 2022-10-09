@@ -1,3 +1,22 @@
 <resources>
+    <!--Application -->
     <string name="app_name">Learning APIs and features</string>
+
+    <!--MainActivity -->
+    <string name="ui_layer_libraries">UI layer libraries</string>
+    <string name="ui_binding_menu_label">UI binding</string>
+    <string name="data_binding_menu_label">Data binding</string>
+    <string name="lifecycle_aware_components_menu_label">Lifecycle-aware components</string>
+    <string name="paging_library_menu_label">Paging library</string>
+
+    <string name="data_layer_libraries">Data layer libraries</string>
+    <string name="data_store_menu_label">DataStore</string>
+    <string name="work_manager_menu_label">WorkManager</string>
+    <!-- TODO: write all the topics here from the docs -->
+
+    <!--UIBindingActivity -->
+    <string name="ui_binding_author">Author: %s</string>
+    <string name="ui_binding_number_of_views">Number of views: %d</string>
+
+
 </resources>
