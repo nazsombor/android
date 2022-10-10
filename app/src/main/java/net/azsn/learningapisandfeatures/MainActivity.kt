@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, UIBindingActivity::class.java))
         }
         findViewById<Button>(R.id.button_data_binding).setOnClickListener() {
-
+            startActivity(Intent(this, DataBindingActivity::class.java))
         }
         findViewById<Button>(R.id.button_lifecycle_aware_components).setOnClickListener() {
 

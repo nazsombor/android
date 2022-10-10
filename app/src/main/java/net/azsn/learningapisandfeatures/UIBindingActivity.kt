@@ -9,7 +9,7 @@ class UIBindingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityUibindingBinding.inflate(layoutInflater)
-        val viewModel = generateViewModel()
+        val viewModel = Article.test()
         binding.uiBindingTitle.text = viewModel.title
         binding.uiBindingDate.text = viewModel.date.toString()
         binding.uiBindingAuthor.text = getString(R.string.ui_binding_author, viewModel.author)
@@ -18,13 +18,4 @@ class UIBindingActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    private fun generateViewModel(): UIBindingViewModel {
-        return UIBindingViewModel(
-            title = "Example Title",
-            date = Date(),
-            article = "Example article...",
-            author = "Uncle Bob",
-            numberOfViews = 5
-        )
-    }
 }
