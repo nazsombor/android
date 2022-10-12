@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, DataBindingActivity::class.java))
         }
         findViewById<Button>(R.id.button_lifecycle_aware_components).setOnClickListener() {
-
+            startActivity(Intent(this, LifeCycleAwareComponentsActivity::class.java))
         }
         findViewById<Button>(R.id.button_paging_library).setOnClickListener() {
 
