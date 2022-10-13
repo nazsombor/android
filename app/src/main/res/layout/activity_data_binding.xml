@@ -4,6 +4,9 @@
         <variable
             name="article"
             type="net.azsn.learningapisandfeatures.Article" />
+        <variable
+            name="author"
+            type="net.azsn.learningapisandfeatures.observabledataobjects.AuthorObservableData" />
     </data>
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +25,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:text="@{article.author}"
+                android:text="@{author.firstName + ' ' + author.lastName}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
