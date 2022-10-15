@@ -1,20 +1,19 @@
 package net.azsn.learningapisandfeatures
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
 import androidx.databinding.DataBindingUtil
-import net.azsn.learningapisandfeatures.databinding.ActivityDataBindingBinding
+import net.azsn.learningapisandfeatures.databinding.ExampleDataBinding
 import net.azsn.learningapisandfeatures.observabledataobjects.AuthorObservableData
 
 class DataBindingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<ActivityDataBindingBinding>(this, R.layout.activity_data_binding)
+        val binding = DataBindingUtil.setContentView<ExampleDataBinding>(this, R.layout.activity_data_binding)
         binding.article = Article.test()
         binding.author = AuthorObservableData()
+
+        //Without !! there is an error: Smart cast to 'AuthorObservableData' is impossible...
         binding.author!!.firstName.set("Tree")
         binding.author!!.lastName.set("Alen")
 
